@@ -710,18 +710,18 @@
         </div>
       </div>
       <div class="reveal">
-        <form class="contact-form" onsubmit="handleSubmit(event)">
+        <form class="contact-form" action="https://formspree.io/f/xojypryy" method="POST" onsubmit="handleSubmit(event)">
           <div class="form-group">
             <label>Your Name</label>
-            <input type="text" placeholder="Raj Patel" required>
+            <input type="text" name="name" placeholder="Raj Patel" required>
           </div>
           <div class="form-group">
             <label>WhatsApp / Email</label>
-            <input type="text" placeholder="+91 98765 43210" required>
+            <input type="text" name="contact" placeholder="+91 98765 43210" required>
           </div>
           <div class="form-group">
             <label>Service Needed</label>
-            <select>
+            <select name="service">
               <option>Reel Editing</option>
               <option>Poster Design</option>
               <option>Monthly Package</option>
@@ -730,7 +730,7 @@
           </div>
           <div class="form-group">
             <label>Tell me about your project</label>
-            <textarea placeholder="Brand name, platform, what you need..."></textarea>
+            <textarea name="message" placeholder="Brand name, platform, what you need..."></textarea>
           </div>
           <button type="submit" class="form-submit">Send Message →</button>
         </form>
